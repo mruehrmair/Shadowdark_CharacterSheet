@@ -252,6 +252,15 @@ input.gear_input{
     width:170px;
 }
 
+.gear_table {
+  counter-reset: sheet-rep-items;
+}
+
+.gear_counter::before {
+  counter-increment: sheet-rep-items;
+  content: counter(sheet-rep-items) '. ';
+}
+
 /* Styling for Spells Sheet */
 .spell_header_table{
     text-align: center;
@@ -341,5 +350,4 @@ button.npc_roll_initiative {
 .npc_atk_pattern{
     width:500px;
 }
-
 
