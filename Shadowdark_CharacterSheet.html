@@ -215,9 +215,9 @@
             </div>
         </div>
     </div>
-    <div class="attacks_table">
-        <div class="divTableRow">
-            <div class="divTableCell">
+    <div class='2colrow'>
+        <div class='sheet-col'>
+            <div class="attacks_table">
                 <div class="roll_attacks">
                     <b>Attacks</b>
                     <fieldset class="repeating_attacks">
@@ -241,32 +241,40 @@
                     </fieldset>
                 </div>
             </div>
-            <div class="divTableCell">
-                <div class="freeform_area">
-                    <textarea rows="5" cols="55" spellcheck="false" name="attr_char_talents"
-                        placeholder="Other Skills"></textarea>
-                </div>
+        </div>
+        <div class='sheet-col'>
+            <div class="freeform_area">
+                <textarea rows="5" cols="55" spellcheck="false" name="attr_char_talents"
+                    placeholder="Other Skills"></textarea>
             </div>
         </div>
     </div>
     <span style="font-family: luminari, fantasy; font-size: 20px;">Gear</span>
-    <div class="gear">
-        <strong>
-            CP<input class="copper_box" type="number" min="0" step="1" name="attr_char_cp" />
-            SP<input class="silver_box" type="number" min="0" step="1" name="attr_char_sp" />
-            GP<input class="gold_box" type="number" min="0" step="1" name="attr_char_gp" />
-            Coin Weight <input type="number" name="attr_coinweight"
-                value="floor((@{char_gp}+@{char_sp}+@{char_cp})/100)" disabled="true" />
-            Slots
+    <div class='2colrow'>
+        <div class='sheet-col'>
+            <div><strong>Slots</strong></div>
             Max Carry<input type="number" min="10" step="1" name="attr_max_gs" />
-            Free Carry <input type="text" name="attr_char_freebie" class="free_carry" placeholder="Backpack" />
+
             <div class="gear_table">
                 <fieldset class="repeating_gear">
                     <span class="gear_counter"></span>
                     <input class="gear_input" type="text" name="attr_char_item" value="" />
                 </fieldset>
             </div>
-        </strong>
+        </div>
+        <div class='sheet-col'>
+            <div class="gear_coins">
+                CP<input class="copper_box" type="number" min="0" step="1" name="attr_char_cp" />
+                SP<input class="silver_box" type="number" min="0" step="1" name="attr_char_sp" />
+                GP<input class="gold_box" type="number" min="0" step="1" name="attr_char_gp" />
+            </div>  
+            <div>Coin Weight <input type="number" name="attr_coinweight"
+                value="floor((@{char_gp}+@{char_sp}+@{char_cp})/100)" disabled="true" /></div>
+            <div class="gear_freecarry">
+                Free Carry <textarea rows="5" cols="55" spellcheck="false" name="attr_char_freebie"
+                placeholder="Backpack"></textarea>
+            </div>          
+        </div>
     </div>
 </div>
 <!-- Spell Sheet Starts Here -->

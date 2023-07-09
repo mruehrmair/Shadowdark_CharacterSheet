@@ -40,6 +40,11 @@ button.button-style {
     display: block;
 }
 
+/* Layout */
+.charsheet .\32 colrow .sheet-col{
+    width: 350px;
+}
+
 /* Character Sheet header table */
 .header_table{
     text-align: center;
@@ -191,7 +196,7 @@ select.armor_dropdown {
 
 /* Attack field Styling */
 .attacks_table{
-    text-align: center;
+    text-align: left;
 	display: table;
     background-color: white;
     width: 100%;
@@ -213,7 +218,7 @@ select.atk_mod {
 
 /* Gear Section Styling */
 .gear_table{
-    text-align: center;
+    text-align: left;
 	display: table;
     background-color: white;
     width: 100%;
